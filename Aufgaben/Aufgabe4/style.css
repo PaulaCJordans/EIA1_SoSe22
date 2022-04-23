@@ -1,0 +1,72 @@
+h1{
+    color: white;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: grey;
+    text-align: right;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    position: absolute;
+    right: 100px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+header{
+    background-image: url(../Aufgabe4/images/italienSonnenuntergang.jpeg);
+    height: 400px;
+    top: 0;
+}
+footer{
+    background-color: #eaeaea;
+    font-size: smaller;
+    color: gray;
+    display: flex;
+}
+footer div:nth-child(1){
+    flex: 1;
+}
+footer div:nth-child(2){
+    flex: 1;
+}
+footer div:nth-child(3){
+    flex: 1;
+}
+.breite{
+    transform: translateX(-50%);
+    width: 800px;
+    left: 50%;
+    position: relative;
+}
+.aktuelleSeite{
+    color: white;
+    text-decoration: underline;
+}
+#name{
+    background-color: grey;
+    color: white;
+}
+#email{
+    background-color: grey;
+    color: white;
+}
+#message{
+    background-color: grey;
+    color: white;
+    
+}
+#senden{
+    background-color: grey;
+    color: white;
+    outline: none;
+}
