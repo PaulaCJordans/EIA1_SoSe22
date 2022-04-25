@@ -1,57 +1,84 @@
-h1{
-    color: white;
-}
 li{
     display: inline;
 }
-a{
-    text-decoration: none;
-    color: grey;
-    text-align: right;
-}
-a:hover{
-    color: white;
-    text-decoration: underline;
-}
-nav{
-    display: flex;
-    position: absolute;
-    right: 100px;
-}
+
 body{
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
-header{
-    background-image: url(../Aufgabe4/images/italienSonnenuntergang.jpeg);
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    text-transform:none;
+    color: rgb(197, 197, 197);
+    text-align: right;
+}
+
+a:hover{
+    color: white;
+}
+nav li[current] a {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.hintergrundbild{
     height: 400px;
+    background-color: black;
+    background-image: url(../Aufgabe4/images/italienSonnenuntergang.jpeg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
     top: 0;
 }
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .li{
+    list-style-type: none;
+    background-color: transparent;
+}
+
+.nav .li:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nav .li:current{
+    background-color: transparent;
+}
+
 footer{
     background-color: #eaeaea;
     font-size: smaller;
-    color: gray;
-    display: flex;
 }
-footer div:nth-child(1){
-    flex: 1;
+
+nav {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    top: 41px;
 }
-footer div:nth-child(2){
-    flex: 1;
-}
-footer div:nth-child(3){
-    flex: 1;
-}
-.breite{
-    transform: translateX(-50%);
+
+.wrapper{
+    position: relative;
     width: 800px;
     left: 50%;
-    position: relative;
+    transform: translateX(-50%)
 }
-.aktuelleSeite{
-    color: white;
-    text-decoration: underline;
+
+.zeilen{
+    display: flex;
+    justify-content: space-between;
 }
+
 #name{
     background-color: grey;
     color: white;
@@ -63,10 +90,23 @@ footer div:nth-child(3){
 #message{
     background-color: grey;
     color: white;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 #senden{
     background-color: grey;
     color: white;
     outline: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+textarea::placeholder{
+    color: white;
+}
+
+input, textarea {
+    border-width: 0px;
 }
