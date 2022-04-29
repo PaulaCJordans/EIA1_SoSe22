@@ -111,6 +111,59 @@ input, textarea {
     border-width: 0px;
 }
 
+@keyframes fade {
+    0% {opacity: 0;}
+    11.11% {opacity: 1;}
+    33.33% {opacity: 1;}
+    44.44% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.css-slides img{
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.css-slides img:nth-child(1) {animation-delay: 0;}
+.css-slides img:nth-child(1) {animation-delay: 3s;}
+.css-slides img:nth-child(1) {animation-delay: 6s;}
+
+.card img{
+    opacity: .3;
+    transition: opacity .25s ease-in-out;
+    transform: translate(0,0)
+}
+
+.card img:hover{
+    opacity: 1;
+}
+
+.zoomeffekt{
+    transition: transform 0,8s;
+    width: 900px;
+}
+
+.zoomeffekt:hover{
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.zoomeffekt:focus{
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.banner{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 h2{
     font-family: 'Monoton', cursive;
 }

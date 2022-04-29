@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="hintergrundbild">
-        <div class="wrapper">
-            <a href="./MeinPortfolio.html"><img height="100" src="../Aufgabe5/images/logo.svg" alt=""></a>
-            <nav class="nav">
-                <ul>
-                    <li class="li" current><a href="../Aufgabe5/MeinPortfolio.html">Portfolio</a></li>
-                    <li class="li"><a href="../Aufgabe5/Contact.html">Contact</a></li>
-                    <li class="li"><a href="../Aufgabe5/AboutMe.html">About Me</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="css-slides">
+                <img loading="lazy" src="../Aufgabe5/EIA1_Aufgabe5_Bilder/ausblickItalien.jpeg" height="400"
+                    width="1600" alt="Meerausblick">
+                <img loading="lazy" src="../Aufgabe5/EIA1_Aufgabe5_Bilder/balkonSonnenuntergang.jpeg" height="400"
+                    width="1600" alt="Sonnenuntergang vom Balkon">
+                <img loading="lazy" src="../Aufgabe5/EIA1_Aufgabe5_Bilder/nafplioGriechenland.JPG" height="400"
+                    width="1600" alt="Meerausblick">
+            </div>
+            <div class="banner">
+                <img height="500px" src="../Aufgabe5/images/banner.png" alt="">
+            </div>
+            <div class="wrapper">
+                <a href="./MeinPortfolio.html"><img height="100" src="../Aufgabe5/images/logo.svg" alt=""></a>
+                <nav class="nav">
+                    <ul>
+                        <li class="li" current><a href="../Aufgabe5/MeinPortfolio.html">Portfolio</a></li>
+                        <li class="li"><a href="../Aufgabe5/Contact.html">Contact</a></li>
+                        <li class="li"><a href="../Aufgabe5/AboutMe.html">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
     <div class="wrapper">
         <main>
             <h2>Fotos</h2>
-            <img height="200" width="800" src="../Aufgabe3/EIA1_Aufgabe3_Bilder/neapel.jpeg" alt="Neapel">
-            <img height="200" width="800" src="../Aufgabe3/EIA1_Aufgabe3_Bilder/sonnenaufgangBerlin.jpeg" alt="Sonnenaufgang in Berlin">
-            <img height="200" width="800" src="../Aufgabe3/EIA1_Aufgabe3_Bilder/sonnenuntergangItalien.jpeg" alt="Sonnenuntergang in Italien">
-            <img height="200" width="800" src="../Aufgabe4/images/italienSonnenuntergang.jpeg" alt="Sonnenuntergang in Italien">
+            <div class="zoomeffekt">
+                <img height="200" width="800" src="../Aufgabe3/EIA1_Aufgabe3_Bilder/neapel.jpeg" alt="Neapel">
+            </div>
+            <div class="zoomeffekt">
+                <img height="200" width="800" src="../Aufgabe3/EIA1_Aufgabe3_Bilder/sonnenaufgangBerlin.jpeg"
+                    alt="Sonnenaufgang in Berlin">
+            </div>
+            <div class="zoomeffekt">
+                <img height="200" width="800" src="../Aufgabe3/EIA1_Aufgabe3_Bilder/sonnenuntergangItalien.jpeg"
+                    alt="Sonnenuntergang in Italien">
+            </div>
+            <div class="zoomeffekt">
+                <img height="200" width="800" src="../Aufgabe4/images/italienSonnenuntergang.jpeg"
+                    alt="Sonnenuntergang in Italien">
+            </div>
             <br>
             <h2>Videos</h2>
             <video height="200" width="800" controls src="../Aufgabe4/EIA1_Aufgabe4_Bilder/kunst.mp4"></video>
@@ -37,8 +65,8 @@
     <br>
     <br>
     <br>
-        <footer>
-    <div class="wrapper zeilen">
+    <footer>
+        <div class="wrapper zeilen">
             <div>
                 <p>EIA1</p>
                 <p>Musterstraße 1</p>
@@ -48,13 +76,16 @@
             </div>
             <div>
                 <p>Follow Me</p>
-                <img height="20" src="../Aufgabe5/images/icon_insta.svg" alt="">
+                <div class="card">
+                    <img height="20" src="../Aufgabe5/images/icon_insta.svg" alt="">
+                </div>
             </div>
             <div>
                 <p>Copyright © 2022 EIA1</p>
                 <p>All rights reserved</p>
             </div>
-    </div>
-        </footer>
+        </div>
+    </footer>
 </body>
+
 </html>
