@@ -1,0 +1,35 @@
+// "Die Einwohnerzahl in Deutschland beträgt im Jahr 2022: xxx Mio." "Relativ zur Gesamtzahl der Einwohnerzahl in der Eu ist die Einwohnerzahl in Deutschland im Jahr 2022: xxx%" "Für Deutschland hat sich die Einwohnerzahl im Jahr 2022 im Vergleich zu 2008 um xxx% verändert."
+const deutschland2008 = 82;
+const deutschland2022 = 83.2;
+const frankreich2008 = 62.14;
+const frankreich2022 = 65.48;
+const italien2008 = 59;
+const italien2022 = 59.53;
+const portugal2008 = 10.56;
+const portugal2022 = 10.27;
+const europa2022 = 447.01;
+const deutschlandAnteilEuropa2022 = deutschland2022 / europa2022 * 100;
+const deutschlandW = deutschland2022 - deutschland2008;
+const deuschlandWachstumSeit2008 = deutschlandW / deutschland2022 * 100;
+const frankreichAnteilEuropa2022 = frankreich2022 / europa2022 * 100;
+const frankreichW = frankreich2022 - frankreich2008;
+const frankreichWachstumSeit2008 = frankreichW / frankreich2022 * 100;
+const italienAnteilEuropa2022 = italien2022 / europa2022 * 100;
+const italienW = italien2022 - italien2008;
+const italienWachstumSeit2008 = italienW / italien2022 * 100;
+const portugalAnteilEuropa2022 = portugal2022 / europa2022 * 100;
+const portugalW = portugal2022 - portugal2008;
+const portugalWachstumSeit2008 = portugalW / portugal2022 * 100;
+console.log("Gesamtzahl EinwohnerInnen in Deutschland 2022" + ":" + " " + deutschland2022 + "Mio.");
+console.log("Relativ zur Gesamtzahl in der EU 2022" + ":" + " " + deutschlandAnteilEuropa2022 + "%");
+console.log("Wachstumsrate in Deutschland seit 2008" + ":" + " " + deuschlandWachstumSeit2008 + "%");
+console.log("Gesamtzahl EinwohnerInnen in Frankreich 2022" + ":" + " " + frankreich2022 + "Mio.");
+console.log("Relativ zur Gesamtzahl in der EU 2022" + ":" + " " + frankreichAnteilEuropa2022 + "%");
+console.log("Wachstumsrate in Frankreich seit 2008" + ":" + " " + frankreichWachstumSeit2008 + "%");
+console.log("Gesamtzahl EinwohnerInnen in Italien 2022" + ":" + " " + italien2022 + "Mio.");
+console.log("Relativ zur Gesamtzahl in der EU 2022" + ":" + " " + italienAnteilEuropa2022 + "%");
+console.log("Wachstumsrate in Italien seit 2008" + ":" + " " + italienWachstumSeit2008 + "%");
+console.log("Gesamtzahl EinwohnerInnen in Portugal 2022" + ":" + " " + portugal2022 + "Mio.");
+console.log("Relativ zur Gesamtzahl in der EU 2022" + ":" + " " + portugalAnteilEuropa2022 + "%");
+console.log("Wachstumsrate in Portugal seit 2008" + ":" + " " + portugalWachstumSeit2008 + "%");
+//# sourceMappingURL=eu.js.map
