@@ -57,4 +57,5 @@ footer p {
     width: 100%;
     height: 75%;
     background: #ffcc00;
+    transition:all 1s;
 }

@@ -12,6 +12,7 @@ const portugal08 = 10.56;
 const portugal22 = 10.27;
 const europa22 = 447.01;
 const jahr = 2022;
+const eu22 = 59.89;
 function gesamtzahl(land22, land) {
     console.log("Gesamtzahl EinwohnerInnen in " + land + " " + jahr + ": " + land22 + "Mio.");
 }
@@ -56,6 +57,7 @@ function bildClicked1() {
     document.querySelector(".relativZurGesamtzahl").innerHTML = "18,61%";
     document.querySelector(".wachstumsrateProzent").innerHTML = "1,44%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "1,2 Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + (deutschland22 / europa22 * 100) + "%");
 }
 ;
 document.querySelector("#frankreich").addEventListener("click", bildClicked2);
@@ -66,6 +68,7 @@ function bildClicked2() {
     document.querySelector(".relativZurGesamtzahl").innerHTML = "14,65%";
     document.querySelector(".wachstumsrateProzent").innerHTML = "5,1%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "3,34 Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + (frankreich22 / europa22 * 100) + "%");
 }
 ;
 document.querySelector("#italien").addEventListener("click", bildClicked3);
@@ -76,6 +79,7 @@ function bildClicked3() {
     document.querySelector(".relativZurGesamtzahl").innerHTML = "13,32%";
     document.querySelector(".wachstumsrateProzent").innerHTML = "0,89%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "0,53 Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + (italien22 / europa22 * 100) + "%");
 }
 ;
 document.querySelector("#portugal").addEventListener("click", bildClicked4);
@@ -86,6 +90,7 @@ function bildClicked4() {
     document.querySelector(".relativZurGesamtzahl").innerHTML = "2,29%";
     document.querySelector(".wachstumsrateProzent").innerHTML = "-2,82%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "-0,29 Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + (portugal22 / europa22 * 100) + "%");
 }
 ;
 document.querySelector("#euroSterne").addEventListener("click", bildClicked5);
@@ -97,6 +102,7 @@ function bildClicked5() {
     document.querySelector(".relativZurGesamtzahl").innerHTML = "59,89 %";
     document.querySelector(".wachstumsrateProzent").innerHTML = "1,42%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "6,41 Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + eu22 + "%"); // Lisa stimmtzu//
 }
 ;
 //# sourceMappingURL=eU.js.map
