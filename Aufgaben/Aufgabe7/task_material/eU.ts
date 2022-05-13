@@ -66,6 +66,8 @@ function bildClicked1() {
     document.querySelector(".wachstumsrateProzent").innerHTML = "1,44%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "1,2 Mio.";
     document.querySelector(".chart").setAttribute("style", "height: " + (deutschland22 / europa22 * 100) +"%");
+    document.querySelector("#deutschland2").setAttribute("class", "active");
+    document.querySelector("#frankreich2").setAttribute("class", "wrapper");
    
 };
 document.querySelector("#frankreich").addEventListener("click", bildClicked2);
@@ -77,6 +79,10 @@ function bildClicked2() {
     document.querySelector(".wachstumsrateProzent").innerHTML = "5,1%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "3,34 Mio.";
     document.querySelector(".chart").setAttribute("style", "height: " + (frankreich22 / europa22 * 100) +"%");
+    document.querySelector("#deutschland2").setAttribute("class", "wrapper");
+    document.querySelector("#frankreich2").setAttribute("class", "active");
+    document.querySelector("#italien2").setAttribute("class", "wrapper");
+    document.querySelector("#portugal2").setAttribute("class", "wrapper");
 };
 document.querySelector("#italien").addEventListener("click", bildClicked3);
 function bildClicked3() {
@@ -87,6 +93,10 @@ function bildClicked3() {
     document.querySelector(".wachstumsrateProzent").innerHTML = "0,89%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "0,53 Mio.";
     document.querySelector(".chart").setAttribute("style", "height: " + (italien22 / europa22 * 100) +"%");
+    document.querySelector("#italien2").setAttribute("class", "active");
+    document.querySelector("#portugal2").setAttribute("class", "wrapper");
+    document.querySelector("#deutschland2").setAttribute("class", "wrapper");
+    document.querySelector("#frankreich2").setAttribute("class", "wrapper");
 };
 document.querySelector("#portugal").addEventListener("click", bildClicked4);
 function bildClicked4() {
@@ -97,6 +107,10 @@ function bildClicked4() {
     document.querySelector(".wachstumsrateProzent").innerHTML = "-2,82%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "-0,29 Mio.";
     document.querySelector(".chart").setAttribute("style", "height: " + (portugal22 / europa22 * 100) +"%");
+    document.querySelector("#portugal2").setAttribute("class", "active");
+    document.querySelector("#italien2").setAttribute("class", "wrapper");
+    document.querySelector("#deutschland2").setAttribute("class", "wrapper");
+    document.querySelector("#frankreich2").setAttribute("class", "wrapper");
 };
 document.querySelector("#euroSterne").addEventListener("click", bildClicked5);
 function bildClicked5() {
@@ -108,4 +122,8 @@ function bildClicked5() {
     document.querySelector(".wachstumsrateProzent").innerHTML = "1,42%";
     document.querySelector(".wachstumsrateZahl").innerHTML = "6,41 Mio.";
     document.querySelector(".chart").setAttribute("style", "height: " + eu22 + "%"); // Lisa stimmtzu//
+    document.querySelector("#deutschland2").setAttribute("class", "wrapper");
+    document.querySelector("#frankreich2").setAttribute("class", "wrapper");
+    document.querySelector("#italien2").setAttribute("class", "wrapper");
+    document.querySelector("#portugal2").setAttribute("class", "wrapper");
 };
