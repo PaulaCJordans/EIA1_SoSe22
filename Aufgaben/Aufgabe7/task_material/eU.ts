@@ -68,6 +68,8 @@ function bildClicked1() {
     document.querySelector(".chart").setAttribute("style", "height: " + (deutschland22 / europa22 * 100) +"%");
     document.querySelector("#deutschland2").setAttribute("class", "active");
     document.querySelector("#frankreich2").setAttribute("class", "wrapper");
+    document.querySelector("#italien2").setAttribute("class", "wrapper");
+    document.querySelector("#portugal2").setAttribute("class", "wrapper");
    
 };
 document.querySelector("#frankreich").addEventListener("click", bildClicked2);
