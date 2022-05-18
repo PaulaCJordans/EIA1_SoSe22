@@ -21,7 +21,7 @@ var zaehler = 0;
 function playBeat() {
     setInterval(function () {
         playSample(beat[zaehler]);
-        zaehler = zaehler + 1;
+        zaehler++;
         if (zaehler === 3) {
             zaehler = 0;
         }

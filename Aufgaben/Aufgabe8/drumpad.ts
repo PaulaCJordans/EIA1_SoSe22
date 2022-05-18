@@ -22,7 +22,7 @@ var zaehler: number = 0;
 function playBeat(): void {
     setInterval(function (): void {
         playSample (beat[zaehler]);
-        zaehler = zaehler + 1;
+        zaehler ++;
         if (zaehler === 3){
             zaehler = 0;
         }
