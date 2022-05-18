@@ -1,4 +1,4 @@
-window.addEventListener("load", addClickListenersDrumPad);
+
 
 function playSample(soundQuelle: string): void {
     var sound: HTMLAudioElement = new Audio(soundQuelle);
@@ -19,15 +19,24 @@ function addClickListenersDrumPad(): void {
 var beat: string[] = ["assets/DrumPad/kick.mp3", "assets/DrumPad/snare.mp3", "assets/DrumPad/hihat.mp3"];
 var zaehler: number = 0;
 
-function playBeat(): void {
-    beat
-}
-var zaehler: number = 0;
+document.querySelector(".play").addEventListener("click", playBeat);
 
-setInterval(function (): void{
+
+setInterval(function playBeat() {
     playSample (beat[zaehler]);
     zaehler = zaehler + 1;
-    if (zaehler ===3) {
+    if (zaehler === 3){
         zaehler = 0;
     }
+    //Anweisungen
 }, 500);
+function playBeat (): void {
+    playSample(beat[zaehler]);
+    zaehler = zaehler + 1;
+    if (zaehler === 3){
+        zaehler = 0;
+    }
+    setInterval(function() {
+        //Anweisungen
+    },500);
+}
