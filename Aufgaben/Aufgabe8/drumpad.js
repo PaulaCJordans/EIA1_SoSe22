@@ -1,3 +1,4 @@
+window.addEventListener("load", addClickListenersDrumPad);
 function playSample(soundQuelle) {
     var sound = new Audio(soundQuelle);
     sound.play();
@@ -16,7 +17,11 @@ function addClickListenersDrumPad() {
     document.querySelector(".play").addEventListener("click'", function () { playBeat(); });
 }
 ;
-var beat = ["assets/DrumPad/kick.mp3", "assets/DrumPad/snare.mp3", "assets/DrumPad/hihat.mp3"];
+var beat = [
+    "./assets/DrumPad/kick.mp3",
+    "./assets/DrumPad/snare.mp3",
+    "./assets/DrumPad/hihat.mp3"
+];
 var zaehler = 0;
 function playBeat() {
     setInterval(function () {
