@@ -62,22 +62,22 @@ var Aufgabe9;
         document.querySelector(".play i").classList.add("fa-play");
         document.querySelector(".play i").classList.remove("fa-stop");
         clearInterval(intervalId);
-        playing = false;
+        playing = true;
     }
+    let lA = [];
     function remix() {
         playing = true;
         var zaehler = 0;
         var toeneTotal = 3;
         intervalId = setInterval(function () {
             var item = gesamtToene[Math.floor(Math.random() * gesamtToene.length)];
-            beat.push(item);
-            if (beat.length = 3) {
-                play(beat[zaehler]);
-            }
-            play(beat[zaehler]);
-            zaehler = zaehler + 1;
-            if (zaehler == 3) {
-                zaehler = 0;
+            lA.push(item);
+            if (beat.length == 3) {
+                play(lA[zaehler]);
+                zaehler = zaehler + 1;
+                if (zaehler == 3) {
+                    zaehler = 0;
+                }
             }
         }, 500);
     }

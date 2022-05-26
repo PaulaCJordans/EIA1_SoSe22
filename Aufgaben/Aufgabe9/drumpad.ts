@@ -75,23 +75,23 @@ namespace Aufgabe9 {
 
         clearInterval(intervalId);
 
-        playing = false;
+        playing = true;
     }
 
+    let lA: string [] = [];
     function remix(): void {
         playing = true;
         var zaehler: number = 0;
         var toeneTotal: number = 3;
         intervalId = setInterval(function (): void {
             var item: string = gesamtToene[Math.floor(Math.random() * gesamtToene.length)];
-            beat.push(item);
-            if (beat.length = 3) {
-                play(beat[zaehler]);
-            }
-            play(beat[zaehler]);
-            zaehler = zaehler + 1;
-            if (zaehler == 3) {
-                zaehler = 0;
+            lA.push(item);
+            if (beat.length == 3) {
+                play(lA[zaehler]);
+                zaehler = zaehler + 1;
+                if (zaehler == 3) {
+                    zaehler = 0;
+                }
             }
         }, 500);
     }
