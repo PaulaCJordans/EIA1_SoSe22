@@ -66,18 +66,17 @@ var Aufgabe9;
     }
     function remix() {
         playing = true;
-        var i = 0;
         var zaehler = 0;
         var toeneTotal = 3;
-        while (i < toeneTotal) {
+        intervalId = setInterval(function () {
             var item = gesamtToene[Math.floor(Math.random() * gesamtToene.length)];
             beat.push(item);
-            i = i + 1;
-        }
-        intervalId = setInterval(function () {
-            play(gesamtToene[zaehler]);
+            if (beat.length = 3) {
+                play(beat[zaehler]);
+            }
+            play(beat[zaehler]);
             zaehler = zaehler + 1;
-            if (zaehler == gesamtToene.length) {
+            if (zaehler == 3) {
                 zaehler = 0;
             }
         }, 500);

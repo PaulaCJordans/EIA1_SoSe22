@@ -80,18 +80,17 @@ namespace Aufgabe9 {
 
     function remix(): void {
         playing = true;
-        var i: number = 0;
         var zaehler: number = 0;
         var toeneTotal: number = 3;
-        while (i < toeneTotal) {
+        intervalId = setInterval(function (): void {
             var item: string = gesamtToene[Math.floor(Math.random() * gesamtToene.length)];
             beat.push(item);
-            i = i + 1;
-        }
-        intervalId = setInterval(function (): void {
-            play(gesamtToene[zaehler]);
+            if (beat.length = 3) {
+                play(beat[zaehler]);
+            }
+            play(beat[zaehler]);
             zaehler = zaehler + 1;
-            if (zaehler == gesamtToene.length) {
+            if (zaehler == 3) {
                 zaehler = 0;
             }
         }, 500);
