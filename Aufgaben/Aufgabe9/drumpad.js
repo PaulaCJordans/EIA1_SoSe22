@@ -59,10 +59,16 @@ var Aufgabe9;
         }, 500);
     }
     function stopBeat() {
-        document.querySelector(".play i").classList.add("fa-play");
-        document.querySelector(".play i").classList.remove("fa-stop");
+        if (document.querySelector(".play i").classList.contains("fa-play")) {
+            document.querySelector(".play i").classList.add("fa-stop");
+            document.querySelector(".play i").classList.remove("fa-play");
+        }
+        else {
+            document.querySelector(".play i").classList.remove("fa-stop");
+            document.querySelector(".play i").classList.add("fa-play");
+        }
         clearInterval(intervalId);
-        playing = true;
+        playing = false;
     }
     let lA = [];
     function remix() {
