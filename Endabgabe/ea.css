@@ -1,0 +1,73 @@
+header {
+    background-color: rgb(21, 75, 57);
+    position: relative;
+    width: 375px;
+    height: 100px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+main {
+    width: 375px;
+    height: 467px;
+    position: relative;
+    margin: auto;
+    background-color: rgb(32, 130, 97);
+    text-align: center;
+    color: white;
+
+}
+footer {
+    background-color: rgb(21, 75, 57);
+    position: relative;
+    width: 375px;
+    height: 100px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#p {
+    font-size: 20px;
+}
+#q {
+    font-size: 12px;
+}
+
+button {
+    height: 30px;
+    width: 120px;
+    color: rgb(21, 75, 57);
+    border-radius: 15px;
+    border-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.versteckt {
+    display: none;
+}
+.richtigesWort {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.wort {
+    padding: 5px;
+    border: 2px solid;
+    border-color: rgb(21, 75, 57);
+    border-radius: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    background-color: rgb(21, 75, 57);
+}
+
+#satzDeutsch{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
